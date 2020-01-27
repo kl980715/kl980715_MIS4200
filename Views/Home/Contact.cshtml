@@ -2,7 +2,10 @@
     ViewBag.Title = "Contact Me";
 }
 <h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+@{
+    ViewBag.Message = "This is my contact info with my name, address, phone number, and email";
+}
+<h4>@ViewBag.Message</h4>
 
 <address>
     Kenneth LaVan<br />
