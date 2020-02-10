@@ -9,14 +9,12 @@ namespace kl980715_MIS4200.Models
     public class Book
     {
         [Key]
-        public int BookID { get; set; }
+        public int bookId { get; set; }
         public string bookName { get; set; }
-        public DateTime releaseDate { get; set; }
-        public Decimal price { get; set; }
-        public int authorID { get; set; }
+        public decimal price { get; set; }
+        public int authorId { get; set; }
         public virtual Author Author { get; set; }
-        public int PublisherID { get; set; }
+        public int publisherId { get; set; }
         public virtual Publisher Publisher { get; set; }
-
     }
 }

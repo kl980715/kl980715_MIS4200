@@ -7,7 +7,7 @@ namespace kl980715_MIS4200.Models
 {
     public class Publisher
     {
-        public int publisherID { get; set; }
+        public int publisherId { get; set; }
         public string companyName { get; set; }
         public string state { get; set; }
         public string city { get; set; }
