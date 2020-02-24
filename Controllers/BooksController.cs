@@ -77,7 +77,7 @@ namespace kl980715_MIS4200.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.authorId = new SelectList(db.Author, "authorId", "firstName", book.authorId);
+            ViewBag.authorId = new SelectList(db.Author, "authorId", "fullName", book.authorId);
             ViewBag.publisherId = new SelectList(db.Publisher, "publisherId", "companyName", book.publisherId);
             return View(book);
         }
