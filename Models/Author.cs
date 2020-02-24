@@ -18,6 +18,9 @@ namespace kl980715_MIS4200.Models
         [Required(ErrorMessage = "Author's last name is required")]
         [StringLength(20)]
         public string lastName { get; set; }
+
+        public string fullName { get { return lastName + ", " + firstName; } }
+        
         [Display(Name = "Book Name")]
         [Required(ErrorMessage = "Author's Book name is required")]
         [StringLength(30)]

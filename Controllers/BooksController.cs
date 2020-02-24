@@ -40,8 +40,9 @@ namespace kl980715_MIS4200.Controllers
         // GET: Books/Create
         public ActionResult Create()
         {
-            ViewBag.authorId = new SelectList(db.Author, "authorId", "firstName");
+            ViewBag.authorId = new SelectList(db.Author, "authorId", "fullName");
             ViewBag.publisherId = new SelectList(db.Publisher, "publisherId", "companyName");
+            //ViewBag.ID = new SelectList(db.Author, "ID", "fullName");
             return View();
         }
 
