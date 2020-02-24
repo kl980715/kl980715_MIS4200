@@ -19,6 +19,7 @@ namespace kl980715_MIS4200.Models
         [StringLength(20)]
         public string lastName { get; set; }
 
+        [Display(Name = "Full Name")]
         public string fullName { get { return lastName + ", " + firstName; } }
         
         [Display(Name = "Book Name")]

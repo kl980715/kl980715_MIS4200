@@ -42,7 +42,7 @@ namespace kl980715_MIS4200.Controllers
         {
             ViewBag.authorId = new SelectList(db.Author, "authorId", "fullName");
             ViewBag.publisherId = new SelectList(db.Publisher, "publisherId", "companyName");
-            //ViewBag.ID = new SelectList(db.Author, "ID", "fullName");
+            //ViewBag.ID = new SelectList(db.Author, "authorId", "fullName");
             return View();
         }
 

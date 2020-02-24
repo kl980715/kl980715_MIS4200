@@ -19,8 +19,10 @@ namespace kl980715_MIS4200.Models
         [DataType(DataType.Currency)]
 
         public decimal price { get; set; }
+        //[Display(Name = "Author Name"]
         public int authorId { get; set; }
         public virtual Author Author { get; set; }
+        //[Display(Name = "Publisher Name"]
         public int publisherId { get; set; }
         public virtual Publisher Publisher { get; set; }
     }
